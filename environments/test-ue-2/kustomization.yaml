@@ -1,0 +1,9 @@
+---
+namespace: web
+namePrefix: prod-
+resources:
+- ../../base
+
+replicas:
+- name: nginx-deployment
+  count: 2
