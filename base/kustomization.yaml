@@ -5,5 +5,13 @@ metadata:
   name: test-kustomize
 
 resources:
-- nginx.yaml
+- nginx/nginx.yaml
 - namespaces.yaml
+
+helmCharts:
+- name: redis-cluster
+  repo: https://charts.bitnami.com/bitnami
+  version: 8.6.2
+  releaseName: redis-cluster
+  namespace: redis
+  valuesFile: redis-cluster/values.yaml
