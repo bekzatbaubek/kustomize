@@ -4,4 +4,4 @@ kind: Kustomization
 metadata:
   name: test-kustomize
 resources:
-- deployment.yaml
+  - deployment.yaml
